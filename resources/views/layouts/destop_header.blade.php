@@ -610,6 +610,18 @@
                                             </svg>
                                         </div>
                                     </a>
+                                    <a class="slide-item {{ nav_checkactive(['categorie-index'], $args) }}"
+                    href="{{ url_builder('admin.controller', ['categorie']) }}">@lang('dev.all_categorie')</a>
+                                </li>
+                                <li class="nav-links__item  nav-links__item--has-submenu ">
+                                    <a class="nav-links__item-link" href="">
+                                        <div class="nav-links__item-body">
+                                            Pages
+                                            <svg class="nav-links__item-arrow" width="9px" height="6px">
+                                                <use xlink:href="images/sprite.svg#arrow-rounded-down-9x6"></use>
+                                            </svg>
+                                        </div>
+                                    </a>
                                     <div class="nav-links__submenu nav-links__submenu--type--menu">
                                         <!-- .menu -->
                                         <div class="menu menu--layout--classic ">

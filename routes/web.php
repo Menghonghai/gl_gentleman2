@@ -18,18 +18,14 @@ use Illuminate\Support\Facades\Auth;
 // session(['local' => 'kh']);
 Route::get('/', function () {
     return view('home');
-    // return redirect('/home');
-});
-Route::get('/home2', function () {
-    return view('home2');
-    // return redirect('/home');
+    // return redirect('home');
 });
 
 // Auth::routes();
-// // Route::group(['prefix' => 'acc'], function () {
-//     Route::any('/{controller}/{method?}/{id?}', ['uses' => 'App\Http\Controllers\UserAccessController@index'])
-//         ->where(['id' => '[0-9a-zA-Z]+', 'controller' => '[0-9a-z]+', 'method' => '[_a-z]+'])->name('admin.controller');
+// Route::group(['prefix' => 'acc'], function () {
 
+    Route::any('/{controller}/{method?}/{id?}', ['uses' => 'App\Http\Controllers\UserAccessController@index'])
+        ->where(['id' => '[0-9a-zA-Z]+', 'controller' => '[0-9a-z]+', 'method' => '[_a-z]+'])->name('admin.controller');
 // Route::group(['middleware' => ['auth']], function () {
 
 //     Route::group(['middleware' => ['checkuserpemission']], function () {
